@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeather</title>
+    <link rel="stylesheet" href="css/notosanskr.css">
+    <link rel="stylesheet" href="css/material_icon.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- jquery -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/custom.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-right searchbox">
+            <div class="searchinput">
+                <input type="search" name="city" class="search-city" id="search-city">
+            </div>
+            <span class="material-icons" id="searchbtn">
+            search
+            </span>
+        </div>
+        <div class="text-center cityname" id="cityname">장기동</div>
+        <p class="text-center time" id="time">오후05시 49분</p>
+        <div class="tempbox mt-5">
+            <div class="nowtemp d-flex align-items-center" id="nowtemp">
+                <div id="icon">
+                <i class="wi wi-day-sunny"></i>
+                </div>
+                <p class="desc ml-3" id="desc">햇볕은 쨍쨍</p>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p class="temp" id="temp">-20º</p>
+                    <span class="min-temp" id="tempmin">
+                        <i class="wi wi-thermometer text-primary txt-shadow"></i>
+                        <span id="min-temp">8</span>ºC
+                    </span>
+                    <span class="max-temp" id="tempmax">
+                        <i class="wi wi-thermometer text-danger txt-shadow"></i>
+                        <span id="max-temp">10</span>ºC
+                    </span>
+                </div>
+                <div class="col-3 ntemp">
+                    <h1>내일</h1>
+                    <div class="wi-icon">
+                        <i class="wi wi-day-rain"></i>
+                    </div>
+                    <div class="wi-text">
+                        <span class="nm-temp">최저</span>
+                        <span class="nm-temp">최고100</span>
+                    </div>
+                </div>
+                <div class="col-3 ntemp">
+                    <h1>모레</h1>
+                    <div class="wi-icon">
+                        <i class="wi wi-day-rain"></i>
+                    </div>
+                    <div class="wi-text">
+                        <span class="nm-temp">최저51º</span>
+                        <span class="nm-temp">최고100º</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="twotemp twotemp-title">
+                세부정보
+            </div>
+            <div class="twotemp twotemp-body">
+                <ul>
+                    <li><label>체감온도 : </label><span id="feels_like"></span></li>
+                    <li></li>
+                    <li><label>해뜨는시각 : </label><span id="sunrise"></span></li>
+                    <li><label>해지는시각 : </label><span id="sunset"></span></li>
+                    <li><label>풍속 : </label><span id="windspeed"></span></li>
+                    <li><label>풍향 : </label><span id="winddeg"></span></li>
+                </ul>
+            </div>
+            <div class="twotemp threetemp-title">
+                시간별 날씨
+            </div>
+            <!-- loop -->
+            <div class="twotemp threetemp-body">
+                <div class="time-weather">
+                    <div class="days">02.27</div>
+                    <div class="times">14시</div>
+                    <div class="icons">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <p class="temps">-20º</p>
+                </div>
+
+                <div class="time-weather">
+                    <div class="days">02.27</div>
+                    <div class="times">14시</div>
+                    <div class="icons">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <p class="temps">-20º</p>
+                </div>
+
+                <div class="time-weather">
+                    <div class="days">02.27</div>
+                    <div class="times">14시</div>
+                    <div class="icons">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <p class="temps">-20º</p>
+                </div>
+
+                <div class="time-weather">
+                    <div class="days">02.27</div>
+                    <div class="times">14시</div>
+                    <div class="icons">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <p class="temps">-20º</p>
+                </div>
+
+                <div class="time-weather">
+                    <div class="days">02.27</div>
+                    <div class="times">14시</div>
+                    <div class="icons">
+                        <i class="wi wi-day-sunny"></i>
+                    </div>
+                    <p class="temps">-20º</p>
+                </div>
+            </div>
+            <!-- /loop -->
+        </div>
+    </div>
+</body>
+</html>
